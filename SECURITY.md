@@ -1,0 +1,72 @@
+# Reporting Security Issues
+
+Please report security issues **confidentially** using
+[GitHub's form](https://github.com/smallfoot/SupplyChainSecurity/security/advisories/new).
+Alternatively, you can send an encrypted email to `smallfoot@osiris.cyber.nyu.edu` using the following PGP public key:
+
+<code>
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+  
+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
+aXrBVee/Zm4QYmux
+=wGJk
+-----END PGP PUBLIC KEY BLOCK-----
+</code>
+
+**Note:** Please do not report such issues publicly on the issue tracker. The
+*The issue tracker is intended for bug reports and feature requests.
+
+## Responding to Reports
+
+Currently, only one maintainer exists for the SupplyChainSecurity repository. Responses will be slow given the limited manpower, but rest assured you will get a response within 3 business days.
+Once the report is reviewed and the vulnerability is validated, a fix will be developed confidentially.
+After the fix is approved, a new release will be created, accompanied by a report describing the vulnerability.
+This report will credit the reporter unless they request anonymity. If applicable, a CVE may also be requested for the vulnerability.
+
+Thank you for your contributions to our work!
