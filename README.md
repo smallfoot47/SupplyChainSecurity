@@ -2,7 +2,7 @@ Here’s a well-structured **README.md** template for your project:
 
 ---
 
-# **Software Supply Chain Security - Homework Assignment 1**  
+# **Software Supply Chain Security**  
 
 This project demonstrates artifact signing, verification, and transparency log integrity validation using Sigstore's **cosign** and **Rekor** tooling.
 It serves as the foundation for understanding software supply chain security concepts, such as artifact verification and log consistency proofs.
@@ -199,5 +199,3 @@ This project is for educational purposes only.
 - **Email**: [smallfoot@osiris.cyber.nyu.edu]  
 
 ---
-
-Let me know if you’d like help refining or customizing specific sections further! 🚀
