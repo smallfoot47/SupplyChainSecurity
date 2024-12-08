@@ -1,0 +1,38 @@
+repos:
+  # Gitleaks for comprehensive secret scanning
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.18.1
+    hooks:
+      - id: gitleaks
+        name: Detect hardcoded secrets
+        description: Scan repository for secrets using Gitleaks
+        entry: gitleaks protect --staged
+        language: golang
+        pass_filenames: false
+        stages: [commit]
+
+  # Detect-secrets for additional secret detection
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        name: Detect potential secrets
+        description: Scan for potential hardcoded secrets
+        args: ['--baseline', '.secrets.baseline']
+        additional_dependencies: ['gibberish']
+
+  # Prevent committing large files
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+        name: Check for large files
+        args: ['--maxkb=500']  # Limit file size to 500KB
+
+  # Additional security-related checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: no-commit-to-branch
+        name: Prevent direct commits to main/master
+        args: [--branch, main, --branch, master]
