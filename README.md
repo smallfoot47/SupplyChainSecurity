@@ -1,7 +1,4 @@
-Here’s a well-structured **README.md** template for your project:
-
 ---
-
 # **Software Supply Chain Security**  
 
 This project demonstrates artifact signing, verification, and transparency log integrity validation using Sigstore's **cosign** and **Rekor** tooling.
