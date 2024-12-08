@@ -192,7 +192,7 @@ This project is for educational purposes only.
 ---
 
 ## **Author**  
-- [Vivek Radhakrishnan]  
-- **Email**: [smallfoot@osiris.cyber.nyu.edu]  
+- Vivek Radhakrishnan  
+- **Email**: smallfoot@osiris.cyber.nyu.edu  
 
 ---
